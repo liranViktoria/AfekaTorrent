@@ -20,6 +20,8 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private TextChangedEventHandler User_Name_TextBox_TextChanged;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace WpfApplication1
 
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
+            
 
         }
 

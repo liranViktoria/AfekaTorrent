@@ -1,0 +1,6 @@
+C:\Users\USER\Documents\GitHub\AfekaTorrent\TryThings\bin\Debug\TryThings.exe.config
+C:\Users\USER\Documents\GitHub\AfekaTorrent\TryThings\bin\Debug\TryThings.exe
+C:\Users\USER\Documents\GitHub\AfekaTorrent\TryThings\bin\Debug\TryThings.pdb
+C:\Users\USER\Documents\GitHub\AfekaTorrent\TryThings\obj\Debug\TryThings.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\AfekaTorrent\TryThings\obj\Debug\TryThings.exe
+C:\Users\USER\Documents\GitHub\AfekaTorrent\TryThings\obj\Debug\TryThings.pdb

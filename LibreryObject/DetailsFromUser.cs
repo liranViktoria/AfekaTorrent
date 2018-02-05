@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace LibreryObject
 {
-    class Program
+    class DetailsFromUser
     {
-        static void Main(string[] args)
-        {
-        }
+
+        public string UserName { set; get; }
+        public string Password { set; get; }
+
+        public string Ip { set; get; }
+        public int PortInt { set; get; }
+        public int PortOut { set; get; }
+
+
+
+
+
+
     }
 }
