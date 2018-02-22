@@ -8,15 +8,17 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <PasswordBox x:Name="password_box" HorizontalAlignment="Left" Margin="98,74,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.319,-3.833"/>
-        <TextBox x:Name="user_name_texbox" HorizontalAlignment="Left" Height="22" Margin="98,27,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="143"/>
-        <Button x:Name="button_path_upload" Content="Browse" HorizontalAlignment="Left" Margin="330,154,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="3.493,0.75" Height="22" Click="button_path_upload_Click"/>
+        <TextBox x:Name="user_name_texbox" HorizontalAlignment="Left" Height="22" Margin="98,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+        <Button x:Name="button_path_upload" Content="Browse" HorizontalAlignment="Left" Margin="416,154,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="3.493,0.75" Height="22" Click="button_path_upload_Click"/>
         <Label x:Name="user_name_label" Content="User name: " HorizontalAlignment="Left" Margin="21,23,0,0" VerticalAlignment="Top"/>
         <Label x:Name="password_label" Content="Password" HorizontalAlignment="Left" Margin="21,66,0,0" VerticalAlignment="Top" Width="72"/>
-        <Label x:Name="upload_path_label" Content="Upload path:" HorizontalAlignment="Left" Margin="21,126,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="download_path_label" Content="Download path:" HorizontalAlignment="Left" Margin="21,176,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.486,5.346"/>
-        <TextBox x:Name="upload_path_texbox" HorizontalAlignment="Left" Height="22" Margin="21,154,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="304"/>
-        <TextBox x:Name="download_path_texbox" HorizontalAlignment="Left" Height="22" Margin="21,207,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="304"/>
-        <Button x:Name="button_path_download" Content="Browse" HorizontalAlignment="Left" Margin="330,207,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="3.493,0.75" Height="22" Click="button_path_download_Click"/>
+        <Label x:Name="upload_path_label" Content="Upload path:" HorizontalAlignment="Left" Margin="42,128,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="download_path_label" Content="Download path:" HorizontalAlignment="Left" Margin="42,181,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.486,5.346"/>
+        <TextBox x:Name="upload_path_texbox" HorizontalAlignment="Left" Height="22" Margin="42,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="363"/>
+        <TextBox x:Name="download_path_texbox" HorizontalAlignment="Left" Height="22" Margin="42,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="363"/>
+        <Button x:Name="button_path_download" Content="Browse" HorizontalAlignment="Left" Margin="416,205,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="3.493,0.75" Height="22" Click="button_path_download_Click"/>
+        <Image x:Name="success_upload" Margin="13,154,480,141" Source="success.png" Stretch="Fill" RenderTransformOrigin="-0.25,0.083" Visibility="Hidden"/>
+        <Image x:Name="success_download" Margin="13,205,480,90" Source="success.png" Stretch="Fill" Visibility="Hidden"/>
 
     </Grid>
 </Window>
