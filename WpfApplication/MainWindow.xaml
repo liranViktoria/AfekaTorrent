@@ -19,6 +19,7 @@
         <Button x:Name="button_path_download" Content="Browse" HorizontalAlignment="Left" Margin="416,205,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="3.493,0.75" Height="22" Click="button_path_download_Click"/>
         <Image x:Name="success_upload" Margin="13,154,480,141" Source="success.png" Stretch="Fill" RenderTransformOrigin="-0.25,0.083" Visibility="Hidden"/>
         <Image x:Name="success_download" Margin="13,205,480,90" Source="success.png" Stretch="Fill" Visibility="Hidden"/>
+        <Button x:Name="update_button" Content="Update" HorizontalAlignment="Left" Margin="122,251,0,0" VerticalAlignment="Top" Width="236" Click="updateBtn_Click" RenderTransformOrigin="1.267,0.65" Height="36"/>
 
     </Grid>
 </Window>

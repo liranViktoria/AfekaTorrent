@@ -12,3 +12,7 @@ C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\WpfApplica
 C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\WpfApplication.csproj.GenerateResource.Cache
 C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\WpfApplication.exe
 C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\WpfApplication.pdb
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\bin\Debug\Json.dll
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\bin\Debug\Newtonsoft.Json.dll
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\bin\Debug\Json.pdb
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\bin\Debug\Newtonsoft.Json.xml
