@@ -1,0 +1,9 @@
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\bin\Debug\WpfApplication.exe.config
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\WpfApplication.exe
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\WpfApplication.pdb
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\ClientApplication.csprojResolveAssemblyReference.cache
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\MainWindow.g.cs
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\MainWindowFiles.g.cs
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\App.g.cs
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\WpfApplication_MarkupCompile.cache
+C:\Users\liran\Documents\GitHub\AfekaTorrent\WpfApplication\obj\Debug\WpfApplication_MarkupCompile.lref

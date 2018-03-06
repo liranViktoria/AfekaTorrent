@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication", "WpfApplication\WpfApplication.csproj", "{C2FCC0C4-8C4F-4160-8C5B-578E1A918D42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApplication", "WpfApplication\ClientApplication.csproj", "{C2FCC0C4-8C4F-4160-8C5B-578E1A918D42}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfekaTorrentServer", "AfekaTorrentServer\AfekaTorrentServer.csproj", "{5DE468EE-28DE-457C-8D74-FDD61EEAFB89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetailsLibrary", "DetailsLibrary\DetailsLibrary.csproj", "{F006E09F-DF61-40A9-809C-F10D6C32822E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite1(1)", "..\..\Visual Studio 2015\WebSites\WebSite1\", "{85312F35-24FF-4171-A4C7-738C6394EF54}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50239"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Visual Studio 2015\WebSites\WebSite1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50239\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50239"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Visual Studio 2015\WebSites\WebSite1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50239\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50239"
+		SlnRelativePath = "..\..\Visual Studio 2015\WebSites\WebSite1\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DBLibrary\DAL.csproj", "{E9DBFED7-EC4D-4B63-A825-41F6BD66E23B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +47,18 @@ Global
 		{5DE468EE-28DE-457C-8D74-FDD61EEAFB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DE468EE-28DE-457C-8D74-FDD61EEAFB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DE468EE-28DE-457C-8D74-FDD61EEAFB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F006E09F-DF61-40A9-809C-F10D6C32822E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F006E09F-DF61-40A9-809C-F10D6C32822E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F006E09F-DF61-40A9-809C-F10D6C32822E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F006E09F-DF61-40A9-809C-F10D6C32822E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85312F35-24FF-4171-A4C7-738C6394EF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85312F35-24FF-4171-A4C7-738C6394EF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85312F35-24FF-4171-A4C7-738C6394EF54}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{85312F35-24FF-4171-A4C7-738C6394EF54}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E9DBFED7-EC4D-4B63-A825-41F6BD66E23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DBFED7-EC4D-4B63-A825-41F6BD66E23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DBFED7-EC4D-4B63-A825-41F6BD66E23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DBFED7-EC4D-4B63-A825-41F6BD66E23B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
