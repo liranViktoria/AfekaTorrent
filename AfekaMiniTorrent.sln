@@ -12,6 +12,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite1(1)", "..\..\Visual Studio 2015\WebSites\WebSite1\", "{85312F35-24FF-4171-A4C7-738C6394EF54}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{e9dbfed7-ec4d-4b63-a825-41f6bd66e23b}|DBLibrary.dll;{F006E09F-DF61-40A9-809C-F10D6C32822E}|DetailsLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50239"
 		Debug.AspNetCompiler.PhysicalPath = "..\..\Visual Studio 2015\WebSites\WebSite1\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50239\"
