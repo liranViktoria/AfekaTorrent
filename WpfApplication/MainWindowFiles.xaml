@@ -16,7 +16,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView x:Name="listViewUpload" HorizontalAlignment="Left" Height="100" Margin="0,285,0,0" VerticalAlignment="Top" Width="501" Background="#FF00FF97" MouseDoubleClick="listViewUpload_MouseDoubleClick">
+        <ListView x:Name="listViewUpload" HorizontalAlignment="Left" Height="100" Margin="0,285,0,0" VerticalAlignment="Top" Width="501" Background="#FF00FF97" MouseDoubleClick="listViewUpload_MouseDoubleClick" SelectionChanged="listViewUpload_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="File Name" Width="130" DisplayMemberBinding="{Binding FileName}" />
@@ -26,7 +26,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView x:Name="listViewDownload" HorizontalAlignment="Left" Height="100" Margin="0,426,0,0" VerticalAlignment="Top" Width="491" Background="#FF00FF97" MouseDoubleClick="listViewDownload_MouseDoubleClick">
+        <ListView x:Name="listViewDownload" HorizontalAlignment="Left" Height="100" Margin="0,426,0,0" VerticalAlignment="Top" Width="491" Background="#FF00FF97" MouseDoubleClick="listViewDownload_MouseDoubleClick" SelectionChanged="listViewDownload_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="File Name" Width="130" DisplayMemberBinding="{Binding FileName}" />

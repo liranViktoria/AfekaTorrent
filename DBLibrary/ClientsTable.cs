@@ -19,14 +19,14 @@ namespace DBLibrary
         //register (add) a new user 
         public void RegisterUser(string newUserName, string password)
         {
-            if (!IsRegistered(newUserName))
+            if (IsRegistered(newUserName))
             {
                 using(AfekaMiniTorrent_DataBaseServerDataContext dataBase = new AfekaMiniTorrent_DataBaseServerDataContext())
                 { 
                 Client newClient = new Client();
                 newClient.UserName = newUserName;
                 newClient.Password = password;
-                newClient.Active = 0;
+                newClient.IsOn = 0;
                 dataBase.Clients.InsertOnSubmit(newClient);
                 dataBase.SubmitChanges();
                 }
@@ -84,7 +84,7 @@ namespace DBLibrary
                 {
                     count++;
                     String isActive = "Active Now";
-                    if (client.Active == 0) { isActive = "Not Active Now"; }
+                    if (client.IsOn == 0) { isActive = "Not Active Now"; }
                     all += "#" + count + ":: User Name: " + client.UserName + ", Password: " + client.Password + ", " + isActive +"\n";
                 }
             }
@@ -113,7 +113,7 @@ namespace DBLibrary
             {
                 foreach (var client in dataBase.Clients)
                 {
-                    if(client.Active==1) { activeClientsList.Add(client);  }
+                    if(client.IsOn == 1) { activeClientsList.Add(client);  }
                 }
             }
             return activeClientsList;
@@ -126,7 +126,7 @@ namespace DBLibrary
         {
             using (AfekaMiniTorrent_DataBaseServerDataContext dataBase = new AfekaMiniTorrent_DataBaseServerDataContext())
             {
-                dataBase.Clients.Single(c => c.UserName == userName).Active = 1;
+                dataBase.Clients.Single(c => c.UserName == userName).IsOn = 1;
                 dataBase.SubmitChanges();
             }
             FilesTable.Instance.AddFiles(ip, userName, userFiles);
@@ -136,7 +136,7 @@ namespace DBLibrary
         {
             using (AfekaMiniTorrent_DataBaseServerDataContext dataBase = new AfekaMiniTorrent_DataBaseServerDataContext())
             {
-                dataBase.Clients.Single(c => c.UserName == userName).Active = 0;
+                dataBase.Clients.Single(c => c.UserName == userName).IsOn = 0;
                 dataBase.SubmitChanges();
             }
             FilesTable.Instance.DeleteFiles(userName);

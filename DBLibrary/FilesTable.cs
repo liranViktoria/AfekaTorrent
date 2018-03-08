@@ -32,7 +32,9 @@ namespace DBLibrary
             List<File> files = new List<File>();
             using (AfekaMiniTorrent_DataBaseServerDataContext dataBase = new AfekaMiniTorrent_DataBaseServerDataContext())
             {
-                foreach (var file in dataBase.Files) { files.Add(file); }
+                foreach (var file in dataBase.Files)
+                    files.Add(file);
+                
             }
             return files;
         }

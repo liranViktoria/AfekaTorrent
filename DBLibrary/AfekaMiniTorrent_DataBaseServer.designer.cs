@@ -24,8 +24,8 @@ namespace DBLibrary
     [global::System.Data.Linq.Mapping.DatabaseAttribute(Name = "AfekaMiniTorrent_DataBase")]
     public partial class AfekaMiniTorrent_DataBaseServerDataContext : System.Data.Linq.DataContext
 	{
-		
-		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
+	    
+        private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
@@ -71,7 +71,7 @@ namespace DBLibrary
 		{
 			get
 			{
-				return this.GetTable<Client>();
+                return this.GetTable<Client>();
 			}
 		}
 		
@@ -94,7 +94,7 @@ namespace DBLibrary
 		
 		private string _Password;
 		
-		private System.Nullable<int> _Active;
+		private System.Nullable<int> _IsOn;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -153,21 +153,21 @@ namespace DBLibrary
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Active", DbType="Int")]
-		public System.Nullable<int> Active
-		{
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage= "_IsOn", DbType="Int")]
+		public System.Nullable<int> IsOn
+        {
 			get
 			{
-				return this._Active;
+				return this._IsOn;
 			}
 			set
 			{
-				if ((this._Active != value))
+				if ((this._IsOn != value))
 				{
 					this.OnActiveChanging(value);
 					this.SendPropertyChanging();
-					this._Active = value;
-					this.SendPropertyChanged("Active");
+					this._IsOn = value;
+					this.SendPropertyChanged("IsOn");
 					this.OnActiveChanged();
 				}
 			}

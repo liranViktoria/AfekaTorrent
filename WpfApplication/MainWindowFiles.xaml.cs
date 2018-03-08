@@ -15,10 +15,9 @@ using DetailsLibrary;
 
 namespace WpfApplication
 {
-    /// <summary>
-    /// Interaction logic for MainWindowFiles.xaml
-    /// </summary>
-    public partial class MainWindowFiles : Window
+
+
+    public partial class MainWindowFiles 
     {
         private Socket s;
         private DetailsFromUser details = new DetailsFromUser();
@@ -35,7 +34,7 @@ namespace WpfApplication
          
             GetDetailsFromXmlFile();
             s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            s.Connect("172.16.0.118", 8080);//To change if not the computer of the server
+            s.Connect("172.16.0.118", 8080);
 
 
             Thread.Sleep(1000);
@@ -371,6 +370,26 @@ namespace WpfApplication
 
                 }
             }
+        }
+
+        private void listViewUpload_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void listViewDownload_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void listView_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
         }
     }
 }
