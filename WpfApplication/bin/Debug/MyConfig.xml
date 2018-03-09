@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
-<DetailsFromUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <UserName>wqew</UserName>
-  <Password>2131221</Password>
-  <PathDownload>C:\Users\liran\Desktop</PathDownload>
-  <PathUpload>C:\Users\liran\Desktop</PathUpload>
-  <IpLocalHost>10.100.102.7</IpLocalHost>
-  <PortIn>8005</PortIn>
-  <PortOut>0</PortOut>
-</DetailsFromUser>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Client>
+	<UserName>momo</UserName>
+	<Password>123123</Password>
+	<Ip>10.0.0.32</Ip>
+	<UploadFolder>C:\Users\liran\Desktop</UploadFolder>
+	<DownloadFolder>C:\Users\liran\Desktop</DownloadFolder>
+	<PortIn>8005</PortIn>
+	<PortOut>8006</PortOut>
+</Client>

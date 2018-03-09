@@ -2,3 +2,4 @@ C:\Users\liran\Documents\GitHub\AfekaTorrent\DetailsLibrary\bin\Debug\DetailsLib
 C:\Users\liran\Documents\GitHub\AfekaTorrent\DetailsLibrary\bin\Debug\DetailsLibrary.pdb
 C:\Users\liran\Documents\GitHub\AfekaTorrent\DetailsLibrary\obj\Debug\DetailsLibrary.dll
 C:\Users\liran\Documents\GitHub\AfekaTorrent\DetailsLibrary\obj\Debug\DetailsLibrary.pdb
+C:\Users\liran\Documents\GitHub\AfekaTorrent\DetailsLibrary\obj\Debug\DetailsLibrary.csprojResolveAssemblyReference.cache

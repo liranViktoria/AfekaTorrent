@@ -9,6 +9,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using DetailsLibrary;
 using Newtonsoft.Json;
+using WpfApplication;
 
 namespace ClientApplication
 {
@@ -34,7 +35,7 @@ namespace ClientApplication
             InitializeComponent();
             Hide();
             s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            s.Connect("172.16.0.118", 8085);
+            s.Connect("10.0.0.32", 8085);
 
                 if (File.Exists(FILE_NAME))
                 {
@@ -63,7 +64,7 @@ namespace ClientApplication
                     String msg = Encoding.Default.GetString(buf);
                   
                     CreateConfigFille();
-                    new MainWindow().Show();
+                    new MainWindowFiles().Show();
                      Close();
                     
       
@@ -133,7 +134,7 @@ namespace ClientApplication
         {
             var myFiles = new DirectoryInfo(uploadPath).GetFiles();
 
-            details.ClearFiles();
+           // details.ClearFiles();
             for (int i = 0; i < myFiles.Length; i++)
             {
                 details.AddFile((myFiles[i].Name), (myFiles[i].Length));

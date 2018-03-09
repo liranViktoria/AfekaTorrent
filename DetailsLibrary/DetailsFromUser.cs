@@ -6,10 +6,10 @@ using System.ComponentModel;
 namespace DetailsLibrary
 {
     
-     public  class DetailsFromUser : IDataErrorInfo
+     public  class DetailsFromUser 
     {
-        private List<FileDetails> files;
-        private List<FileDetails> Files { get { return files; } }
+        public List<FileDetails> files;
+        public List<FileDetails> Files { get { return files; } }
         public string UserName { set; get; }
         public string Password { set; get; }
         public string PathDownload { set; get; }
@@ -27,24 +27,47 @@ namespace DetailsLibrary
             files.Add(new FileDetails(name, numOfBytes));
         }
 
-        public void ClearFiles()
+     
+
+    }
+
+
+
+    public class MySearchResult
+    {
+        private List<String> ips;
+
+        public MySearchResult()
         {
-            files.Clear();
+            ips = new List<string>();
         }
-        public string Error
+        public MySearchResult(String fileName, long size, List<String> ips)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            FileName = fileName;
+            Size = size;
+            this.ips = ips;
         }
 
-        public string this[string columnName]
+        public string FileName { get; set; }
+        public long Size { get; set; }
+        public List<String> Ips { get { return ips; } }
+        public void AddIp(String ip)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            ips.Add(ip);
         }
+        public void ClearIps()
+        {
+            ips.Clear();
+        }
+        public override string ToString()
+        {
+            string s = "file name " + FileName + " size " + Size + "\nips:\n";
+            foreach (string ip in ips)
+                s += ip + "\n";
+            return s;
+
+
+        }
+
     }
 }

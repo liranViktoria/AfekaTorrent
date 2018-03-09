@@ -1,6 +1,0 @@
-C:\Users\liran\Documents\GitHub\AfekaTorrent\AfekaTorrentServer\bin\Debug\AfekaTorrentServer.exe.config
-C:\Users\liran\Documents\GitHub\AfekaTorrent\AfekaTorrentServer\bin\Debug\AfekaTorrentServer.exe
-C:\Users\liran\Documents\GitHub\AfekaTorrent\AfekaTorrentServer\bin\Debug\AfekaTorrentServer.pdb
-C:\Users\liran\Documents\GitHub\AfekaTorrent\AfekaTorrentServer\obj\Debug\AfekaTorrentServer.csprojResolveAssemblyReference.cache
-C:\Users\liran\Documents\GitHub\AfekaTorrent\AfekaTorrentServer\obj\Debug\AfekaTorrentServer.exe
-C:\Users\liran\Documents\GitHub\AfekaTorrent\AfekaTorrentServer\obj\Debug\AfekaTorrentServer.pdb

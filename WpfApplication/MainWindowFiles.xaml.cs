@@ -34,12 +34,8 @@ namespace WpfApplication
          
             GetDetailsFromXmlFile();
             s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            s.Connect("172.16.0.118", 8080);
-
-
+            s.Connect("10.0.0.32", 8080);
             Thread.Sleep(1000);
-
-
             try
             {
                 s.Send(Encoding.Default.GetBytes(JsonConvert.SerializeObject(details)));
@@ -164,43 +160,7 @@ namespace WpfApplication
             xmlReader.Close();
 
         }
-        public class MySearchResult
-        {
-            private List<String> ips;
 
-            public MySearchResult()
-            {
-                ips = new List<string>();
-            }
-            public MySearchResult(String fileName, long size, List<String> ips)
-            {
-                FileName = fileName;
-                Size = size;
-                this.ips = ips;
-            }
-
-            public string FileName { get; set; }
-            public long Size { get; set; }
-            public List<String> Ips { get { return ips; } }
-            public void AddIp(String ip)
-            {
-                ips.Add(ip);
-            }
-            public void ClearIps()
-            {
-                ips.Clear();
-            }
-            public override string ToString()
-            {
-                string str = "File name:   " + FileName + "\nsize: " + Size + "\nips:\n";
-                foreach (string ip in ips)
-                    str += ip + "\n";
-                return str;
-
-
-            }
-
-        }
 
         private void log_out_button_Click(object sender, RoutedEventArgs e)
         {

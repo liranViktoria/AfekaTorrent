@@ -74,13 +74,13 @@ namespace DBLibrary
             }
         }
 
-        public List<MySearches> FindFile(string fileName)
+        public List<MySearchResult> FindFile(string fileName)
         {
             using (AfekaMiniTorrent_DataBaseServerDataContext dataBase = new AfekaMiniTorrent_DataBaseServerDataContext())
             {
                 var files = from f in dataBase.Files where f.FileName == fileName select f;
                 var sizes = (from f in dataBase.Files where f.FileName == fileName select f.Size).Distinct();
-                List<MySearches> searches = new List<MySearches>();
+                List<MySearchResult> searches = new List<MySearchResult>();
                 foreach (var size in sizes)
                 {
                     List<String> ips = new List<string>();
@@ -88,7 +88,7 @@ namespace DBLibrary
                     {
                         if (file.Size == size) { ips.Add(file.Ip); }
                     }
-                    searches.Add(new MySearches(fileName, size, ips));
+                    searches.Add(new MySearchResult(fileName, size, ips));
                 }
                 if (searches.Count() != 0) return searches;
             }
